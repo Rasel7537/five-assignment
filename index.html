@@ -12,7 +12,114 @@
  />
  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-   <h1>dfgdrsg</h1>
+<body class="bg-gray-100 p-5">
+
+  <nav class="bg-white mt-6 mx-36 rounded-sm " >
+    <section class="flex justify-between">
+      <div class="flex gap-2 ml-4 ">
+          <img class="w-14 h-14" src="./assets/logo.png" alt="">
+          <h1 class="text-3xl mt-3 ">Dev<span class="font-bold">Board</span></h1>
+      </div>
+    <!-- 2nd part nav -->
+      <div class="flex gap-2 mt-4 mr-4">
+        <img class="w-5 h-5" src="./assets/checkbox.png" alt="">
+        <h1 class="font-bold">23</h1>
+          <img class="w-5 h-5 "  src="./assets/theme-btn.png" alt="">
+      </div>
+    </section>
+</nav>
+
+<!-- main part -->
+    <div class="max-w-6xl grid grid-cols-4 gap-4 mx-36 mt-4 ">
+        <!-- Task Cards Section -->
+        <div class="col-span-3 grid grid-cols-4 gap-4">
+          <div class="col-span-4 grid grid-cols-3 gap-4 bg-white p-4 shadow rounded-lg">
+            <div class="flex items-center justify-center bg-gray-100 p-4 rounded-lg gap-2">
+                <img src="./assets/checkbox.png" alt="" srcset="">
+                <p class="font-semibold">Task Assigned</p>
+                <span class="text-3xl font-bold  ml-2">05</span>
+            </div>
+            <div class="bg-linear-to-r from-[#3752FD] to-[#9BA8F8] text-white p-4 text-center rounded-lg font-semibold flex items-center justify-center">
+                <img class="w-10 h-10" src="./assets/board.png" alt="" class="">
+                <h3> Discover Something New Today!</h3>
+            </div>
+            <div class="flex items-center justify-center bg-gray-100 p-4 rounded-lg gap-2">
+              <img src="./assets/calender.png" alt="" srcset="">
+                 <p class="font-semibold">Wed , <span class="text-black font-bold">Jul 28 2025</span></p>
+            </div>
+        </div>
+          <!-- adding part -->
+            <div class="bg-white p-4 shadow rounded-lg ">
+                <p class="text-sm text-gray-500">ShopEase</p>
+                <p class="font-bold">Fix Mobile Button Issue</p>
+                <p class="text-xs text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
+                <p class="text-xs mt-2">Deadline <span class="font-semibold">21 March 2025</span></p>
+                <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded mt-2">Completed</button>
+            </div>
+            <div class="bg-white p-4 shadow rounded-lg ">
+                <p class="text-sm text-gray-500">CloudSync</p>
+                <p class="font-bold">Add Dark Mode</p>
+                <p class="text-xs text-gray-500">Store the user's preference in localStorage, update CSS ...</p>
+                <p class="text-xs mt-2">Deadline <span class="font-semibold">21 March 2025</span></p>
+                <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded mt-2">Completed</button>
+            </div>
+            <div class="bg-white p-4 shadow rounded-lg ">
+                <p class="text-sm text-gray-500">SwiftPay</p>
+                <p class="font-bold">Optimize Home page</p>
+                <p class="text-xs text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
+                <p class="text-xs mt-2">Deadline <span class="font-semibold">21 March 2025</span></p>
+                <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded mt-2">Completed</button>
+            </div>
+            <div class="bg-white p-4 shadow rounded-lg ">
+                <p class="text-sm text-gray-500">Meta</p>
+                <p class="font-bold">Add new emoji ✋</p>
+                <p class="text-xs text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
+                <p class="text-xs mt-2">Deadline <span class="font-semibold">21 March 2025</span></p>
+                <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded mt-2">Completed</button>
+            </div>
+            <div class="bg-white p-4 shadow rounded-lg ">
+                <p class="text-sm text-gray-500">Google LLC</p>
+                <p class="font-bold">Integrate OpenAI API</p>
+                <p class="text-xs text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
+                <p class="text-xs mt-2">Deadline <span class="font-semibold">21 March 2025</span></p>
+                <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded mt-2">Completed</button>
+            </div>
+            <div class="bg-white p-4 shadow rounded-lg ">
+                <p class="text-sm text-gray-500">Glassdoor</p>
+                <p class="font-bold">Improve Job searching</p>
+                <p class="text-xs text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
+                <p class="text-xs mt-2">Deadline <span class="font-semibold">21 March 2025</span></p>
+                <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded mt-2">Completed</button>
+            </div>
+            <div class="bg-white p-4 shadow rounded-lg ">
+              <p class="text-sm text-gray-500">Glassdoor</p>
+              <p class="font-bold">Improve Job searching</p>
+              <p class="text-xs text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
+              <p class="text-xs mt-2">Deadline <span class="font-semibold">21 March 2025</span></p>
+              <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded mt-2">Completed</button>
+          </div>
+          <div class="bg-white p-4 shadow rounded-lg ">
+            <p class="text-sm text-gray-500">Glassdoor</p>
+            <p class="font-bold">Improve Job searching</p>
+            <p class="text-xs text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
+            <p class="text-xs mt-2">Deadline <span class="font-semibold">21 March 2025</span></p>
+            <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded mt-2">Completed</button>
+        </div>
+        </div>
+        <!-- Activity Log -->
+        <div class="col-span-1 bg-white p-4 shadow rounded-lg ">
+          <div class="flex gap-2 items-center justify-center">
+            <img src="./assets/activity.png" alt="" srcset="">
+            <p class="font-semibold flex items-center"> Activity Log</p>
+          </div>
+              <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded mt-3 ml-20">Clear History</button>
+          
+
+            <div class="mt-2 text-xs">
+                <p class="p-2 rounded">You have Completed The Task Add Dark Mode at 12:48:15 PM</p>
+                <p class=" p-2 rounded mt-2">You have Completed The Task Add Dark Mode at 12:48:15 PM</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
