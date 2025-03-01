@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question part</title>
+  <!-- daisyui CDN -->
+  <link
+   href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+   rel="stylesheet"
+   type="text/css"
+ />
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ <!-- google font CDN -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <style>
+  .font-poppins{
+    font-family: "Poppins", sans-serif;
+
+  }
+ </style>
+</head>
+<body class="font-poppins bg-gray-100">
+  <!-- navbar start -->
+  <div class="navbar bg-base-100 shadow-sm">
+    <div class="navbar-start gap-2">
+        <img class="w-10 h-10" src="./assets/logo.png" alt="">
+        <h1 class="text-3xl mt-1  ">Dev<span class="font-bold">Board</span></h1>
+    </div>
+    <div class="navbar-end">
+      <a  id="back-btn" class=" cursor-pointer bg-blue-600 text-white font-bold btn">Back to Desk</a>
+    </div>
+  </div>
+  <!-- navbar end-->
+<div  class=" text-center text-2xl font-bold mt-3"><h1>Blogs</h1></div>
+<!-- Question & answer part -->
+ <section class="my-5 mx-5 ">
+  <div class="  p-5 shadow rounded-lg bg-white">
+    <h1 class="font-bold ">Question-1: What are the different ways to select an element in the DOM?</h1>
+    <p class="text-gray-500">There are many ways to select an element in the DOM . First of all we can use Single Element Selection example: getElementById and querySelector. Again we can used Multiple Elements Selection example:querySelectorAll and getElementsByName. we can used Traversing and Advanced Selection.  </p>
+  </div>
+  <div class="p-5 shadow rounded-lg bg-white pt-3 mt-2">
+    <h1 class="font-bold" >Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+    <p class="text-gray-500">the difference between innerHTML, innerText, and textContent are innerHTML retrieves or sets the HTML content inside an element, including tags.And the secoend part is innerText returns only the visible text content, ignoring hidden elements and respecting CSS styling. And the third is textContent returns all text content, including hidden elements, without interpreting HTML tags.</p>
+  </div>
+  <div class="p-5 shadow rounded-lg bg-white pt-3 mt-2">
+    <h1 class="font-bold">Question-3: What is event delegation in the DOM?</h1>
+    <p class="text-gray-500">Event delegation is a technique in the DOM where you attach a single event listener to a parent element to manage events for all its child elements.Also  This approach leverages event bubbling, allowing you to handle events efficiently and especially for dynamically added or numerous child elements.</p>
+  </div>
+  <div class="p-5 shadow rounded-lg bg-white pt-3 mt-2">
+    <h1 class="font-bold">Question-4: What is event bubbling in the DOM?</h1>
+    <p class="text-gray-500">Event bubbling is a behavior in the DOM where an event triggered on a child element propagates upward through its ancestor elements in the hierarchy. This allows parent elements to handle events that originate from their children, enabling techniques like event delegation.</p>
+  </div>
+  <div class="p-5 shadow rounded-lg bg-white pt-3 mt-2">
+    <h1 class="font-bold" >Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+    <p class="text-gray-500">To create an element, use document.createElement. To add it to the DOM, use methods like appendChild or insertBefore, and to remove an element, use removeChild or remove.</p>
+  </div>
+ </section>
+<script src="script/add.js"></script> 
+<script src="script/back.js"></script>
+</body>
+</html>

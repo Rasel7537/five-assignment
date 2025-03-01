@@ -11,8 +11,18 @@
    type="text/css"
  />
  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ <!-- google font CDN -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <style>
+  .font-poppins{
+    font-family: "Poppins", sans-serif;
+
+  }
+ </style>
 </head>
-<body class="bg-gray-100 p-5">
+<body class="font-poppins bg-gray-100 p-5  ">
 
   <nav class="bg-white mt-6 mx-36 rounded-sm " >
     <section class="flex justify-between">
@@ -24,7 +34,7 @@
       <div class="flex gap-2 mt-4 mr-4">
         <img class="w-5 h-5" src="./assets/checkbox.png" alt="">
         <h1 class="font-bold">23</h1>
-          <img class="w-5 h-5 "  src="./assets/theme-btn.png" alt="">
+          <img id="themeButton" class="w-5 h-5  cursor-pointer"  src="./assets/theme-btn.png" alt="">
       </div>
     </section>
 </nav>
@@ -39,7 +49,7 @@
                 <p class="font-semibold">Task Assigned</p>
                 <span class="text-3xl font-bold  ml-2">05</span>
             </div>
-            <div class="bg-linear-to-r from-[#3752FD] to-[#9BA8F8] text-white p-4 text-center rounded-lg font-semibold flex items-center justify-center">
+            <div id="add-page" class=" cursor-pointer bg-linear-to-r from-[#3752FD] to-[#9BA8F8] text-white p-4 text-center rounded-lg font-semibold flex items-center justify-center">
                 <img class="w-10 h-10" src="./assets/board.png" alt="" class="">
                 <h3> Discover Something New Today!</h3>
             </div>
@@ -121,5 +131,8 @@
             </div>
         </div>
     </div>
+    <script src="script/add.js"></script>
+    <script src="script/back.js"></script>
+    <script src="script/colour.js"></script>
 </body>
 </html>
